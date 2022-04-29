@@ -40,7 +40,7 @@ function App() {
                     <img src="images/profile-1.jpg" alt=""/>
                 </div>
                 <div class="column right">
-                    <p>insert text</p>
+                    <p>insert text here</p>
                     <a href="https://drive.google.com/file/d/19msMQTUWFDBZJrSDB8sIUKv5neSMqWNf/view?usp=sharing">Download Resume</a>
                 </div>
             </div>
@@ -92,11 +92,18 @@ function App() {
 
     <section class="certifications" id="certifications">
         <div class="max-width">
-            <h2 class="title">Cerfications</h2>
+            <h2 class="title">Certifications</h2>
             <div class="card">
                 <div class="box">
                     <i class="fas fa-laptop-code"></i>
                     <div class="text">Full Stack Development</div>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <i class="fas fa-code"></i>
+                    <div class="text">Data Management</div>
                     <p>Lorem ipsum dolor sit amet</p>
                 </div>
             </div>
