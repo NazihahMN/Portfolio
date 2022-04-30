@@ -34,7 +34,7 @@ function App() {
 
     <section className="about" id="about">
         <div className="max-width">
-            <h2 className="title">About me</h2>
+            <h2 className="title">About Me</h2>
             <div className="about-content">
                 <div className="column left">
                     <img src="images/profile-1.jpg" alt=""/>
@@ -49,7 +49,7 @@ function App() {
     
     <section className="skills" id="skills">
         <div className="max-width">
-            <h2 className="title">My skills</h2>
+            <h2 className="title">My Skills</h2>
             <div className="skills-content">
                 <div className="column left">
                     <div className="text">INTERNSHIP & PROJECT</div>
@@ -92,27 +92,33 @@ function App() {
 
     <section className="certifications" id="certifications">
         <div className="max-width">
-            <h2 className="title">Certifications</h2>
+            <h2 className="title">Certifications & Badges</h2>
+            <div className="cert-content">
             <div className="card">
                 <div className="box">
-                    <i className="fas fa-laptop-code"></i>
                     <div className="text">Full Stack Development</div>
                     <p>Lorem ipsum dolor sit amet</p>
                 </div>
             </div>
             <div className="card">
                 <div className="box">
-                    <i className="fas fa-code"></i>
                     <div className="text">Data Management</div>
                     <p>Lorem ipsum dolor sit amet</p>
                 </div>
+            </div>
+            <div className="card">
+                <div className="box">
+                    <div className="text">Data Management</div>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
             </div>
         </div>
     </section>
 
     <section className="contact" id="contact">
         <div className="max-width">
-            <h2 className="title">Contact me</h2>
+            <h2 className="title">Contact Me</h2>
             <div className="contact-content">
                 <div className="column left">
                     <div className="text">Get in Touch</div>
@@ -142,14 +148,14 @@ function App() {
                     </div>
                 </div>
                 <div className="column right">
-                    <div className="text">Message me</div>
+                    <div className="text">Message Me</div>
                     <form action="https://formspree.io/f/xzbokjqb" method="POST">
                         <div className="fields">
                         <div className="field name">
-                        <input type="text" name="Name" placeholder="Name" required/>
+                        <input type="text" name="Name" placeholder="Your Name" required/>
                         </div>
                         <div className="field email">
-                        <input type="email" name="Email" placeholder="Email" required/>
+                        <input type="email" name="Email" placeholder="Your Email" required/>
                         </div>
                         </div>
                         <div className="field">
