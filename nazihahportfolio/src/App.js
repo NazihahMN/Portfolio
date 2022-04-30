@@ -1,4 +1,8 @@
 import './App.css';
+import CertifiedDataAssociate from './pic/CertifiedDataAssociate.png';
+import DigitalThinkingInnovation from './pic/DigitalThinkingInnovation.png';
+import MicrosoftCertifiedAzureDataFundamentals from './pic/MicrosoftCertifiedAzureDataFundamentals.png';
+
 
 function App() {
   return (
@@ -37,7 +41,6 @@ function App() {
             <h2 className="title">About Me</h2>
             <div className="about-content">
                 <div className="column left">
-                    <img src="images/profile-1.jpg" alt=""/>
                 </div>
                 <div className="column right">
                     <p>insert text here</p>
@@ -94,22 +97,27 @@ function App() {
         <div className="max-width">
             <h2 className="title">Certifications & Badges</h2>
             <div className="cert-content">
+            <div className="box">
+            </div>
             <div className="card">
                 <div className="box">
-                    <div className="text">Full Stack Development</div>
-                    <p>Lorem ipsum dolor sit amet</p>
+                <img src={CertifiedDataAssociate} width="200" height="200" alt=""/>
+                    <div className="text">CDA</div>
+                    <p>Data Concepts | Organizational Data</p>
                 </div>
             </div>
             <div className="card">
                 <div className="box">
-                    <div className="text">Data Management</div>
-                    <p>Lorem ipsum dolor sit amet</p>
+                <img src={DigitalThinkingInnovation} width="200" height="200" alt=""/>
+                    <div className="text">DTI</div>
+                    <p>Design Thinking | Digital Innovation</p>
                 </div>
             </div>
             <div className="card">
                 <div className="box">
-                    <div className="text">Data Management</div>
-                    <p>Lorem ipsum dolor sit amet</p>
+                <img src={MicrosoftCertifiedAzureDataFundamentals} width="200" height="200" alt=""/>
+                    <div className="text">DP-900d</div>
+                    <p>Core Data Concepts | Relational Data | Non-Relational Data | Data Workloads</p>
                 </div>
             </div>
             </div>
