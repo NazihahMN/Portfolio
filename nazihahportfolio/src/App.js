@@ -115,7 +115,7 @@ function App() {
             </div>
             <div className="card">
                 <div className="box">
-                <img src={MicrosoftCertifiedAzureDataFundamentals} width="200" height="200" alt=""/>
+                <img src={MicrosoftCertifiedAzureDataFundamentals} width="200" height="180" alt=""/>
                     <div className="text">DP-900d</div>
                     <p>Core Data Concepts | Relational Data | Non-Relational Data | Data Workloads</p>
                 </div>
