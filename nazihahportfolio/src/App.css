@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 section{
     padding: 100px 0;
 }
@@ -16,8 +17,8 @@ section{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.certifications .cert-content,
 .skills .skills-content,
+.certifications .cert-content,
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -207,7 +208,7 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: rgb(53, 207, 238);;
+    color: rgb(53, 207, 238);
 }
 .about .about-content .right p{
     text-align: justify;
