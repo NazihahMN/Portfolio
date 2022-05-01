@@ -343,6 +343,10 @@ section .title::after{
     width: 40%;
 }
 
+#icon {
+    margin: 3px;
+}
+
 .contact .title::after{
     content: "get in touch";
 }
@@ -357,9 +361,9 @@ section .title::after{
 .contact .contact-content .left p{
     text-align: justify;
 }
-.contact .contact-content .left .icons{
+/* .contact .contact-content .left .icons{
     margin: 10px 0;
-}
+} */
 .contact .contact-content .row{
     display: flex;
     height: 65px;

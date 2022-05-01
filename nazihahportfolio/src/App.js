@@ -2,6 +2,8 @@ import './App.css';
 import CertifiedDataAssociate from './pic/CertifiedDataAssociate.png';
 import DigitalThinkingInnovation from './pic/DigitalThinkingInnovation.png';
 import MicrosoftCertifiedAzureDataFundamentals from './pic/MicrosoftCertifiedAzureDataFundamentals.png';
+import LinkedIn from './pic/LinkedIn.png';
+import github from './pic/github.png';
 
 
 function App() {
@@ -101,22 +103,22 @@ function App() {
             </div>
             <div className="card">
                 <div className="box">
-                <img src={CertifiedDataAssociate} width="200" height="200" alt=""/>
+                <a href ="https://www.credly.com/badges/b1b9413f-df54-4152-99a7-eaee3c9da53c" target="blank"><img src={CertifiedDataAssociate} width="200" height="200" alt=""/></a>
                     <div className="text">CDA</div>
                     <p>Data Concepts | Organizational Data</p>
                 </div>
             </div>
             <div className="card">
                 <div className="box">
-                <img src={DigitalThinkingInnovation} width="200" height="200" alt=""/>
+                <a href ="https://www.credly.com/badges/88e8411c-278d-4ea2-8f35-f158e4c1dac1" target="blank"><img src={DigitalThinkingInnovation} width="200" height="200" alt=""/></a>
                     <div className="text">DTI</div>
                     <p>Design Thinking | Digital Innovation</p>
                 </div>
             </div>
             <div className="card">
                 <div className="box">
-                <img src={MicrosoftCertifiedAzureDataFundamentals} width="200" height="180" alt=""/>
-                    <div className="text">DP-900d</div>
+                <a href ="https://www.credly.com/badges/21cf4a58-10d3-4775-8d32-732be016e103" target="blank"><img src={MicrosoftCertifiedAzureDataFundamentals} width="200" height="180" alt=""/></a>
+                    <div className="text">DP-900</div>
                     <p>Core Data Concepts | Relational Data | Non-Relational Data | Data Workloads</p>
                 </div>
             </div>
@@ -131,26 +133,17 @@ function App() {
                 <div className="column left">
                     <div className="text">Get in Touch</div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
-                    <div className="icons">
+                    <div className="icon">
                         <div className="row">
-                            <i className="fas fa-user"></i>
-                            <div className="info">
-                                <div className="head">Name</div>
-                                <div className="sub-title">Nazihah Nazri</div>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <i className="fas fa-map-marker-alt"></i>
-                            <div className="info">
-                                <div className="head">Address</div>
-                                <div className="sub-title">Taiping, Perak</div>
+                            <i className="fas fa-envelope"></i>
+                            <div className="icon">
+                                <a href ="https://github.com/NazihahMN" target="blank"><img id="icon" src={github} width="55" height="55" alt=""/></a>
                             </div>
                         </div>
                         <div className="row">
                             <i className="fas fa-envelope"></i>
-                            <div className="info">
-                                <div className="head">Email</div>
-                                <div className="sub-title">nazihahmohdnazri@gmail.com</div>
+                            <div className="icon">
+                                <a href ="https://www.linkedin.com/in/nazihah-nazri-747877zee/" target="blank"><img id="icon" src={LinkedIn} width="50" height="50" alt=""/></a>
                             </div>
                         </div>
                     </div>
