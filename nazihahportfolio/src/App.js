@@ -18,13 +18,11 @@ function App() {
             <ul className="menu">
                 <li><a href="#home" className="menu-btn">Home</a></li>
                 <li><a href="#about" className="menu-btn">About</a></li>
+                <li><a href="#project" className="menu-btn">Project</a></li>
                 <li><a href="#skills" className="menu-btn">Skills</a></li>
                 <li><a href="#certifications" className="menu-btn">Certifications</a></li>
                 <li><a href="#contact" className="menu-btn">Contact</a></li>
             </ul>
-            <div className="menu-btn">
-                <i className="fas fa-bars"></i>
-            </div>
         </div>
     </nav>
 
@@ -43,11 +41,43 @@ function App() {
             <h2 className="title">About Me</h2>
             <div className="about-content">
                 <div className="column left">
+                    <img src=""alt=""/>
                 </div>
                 <div className="column right">
                     <p>insert text here</p>
-                    <a href="https://drive.google.com/file/d/19msMQTUWFDBZJrSDB8sIUKv5neSMqWNf/view?usp=sharing">Download Resume</a>
+                    <a href="https://drive.google.com/file/d/12YTiempeUFdJ17i40kQNvLOWClLbdS8Y/view?usp=sharing">Download Resume</a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section className="certifications" id="certifications">
+        <div className="max-width">
+            <h2 className="title">My Project</h2>
+            <div className="cert-content">
+            <div className="box">
+            </div>
+            <div className="card">
+                <div className="box">
+                <a href ="" target="blank"><img src= "" width="200" height="200" alt=""/></a>
+                    <div className="text">Project 1</div>
+                    <p>On-going</p>
+                </div>
+            </div>
+            <div className="card">
+                <div className="box">
+                <a href ="" target="blank"><img src= "" width="200" height="200" alt=""/></a>
+                    <div className="text">Project 2</div>
+                    <p>On-going</p>
+                </div>
+            </div>
+            <div className="card">
+                <div className="box">
+                <a href ="" target="blank"><img src= "" width="200" height="180" alt=""/></a>
+                    <div className="text">Project 3</div>
+                    <p>On-going</p>
+                </div>
+            </div>
             </div>
         </div>
     </section>
