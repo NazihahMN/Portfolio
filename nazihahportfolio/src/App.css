@@ -17,6 +17,7 @@ section{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
+.project .project-content,
 .skills .skills-content,
 .certifications .cert-content,
 .contact .contact-content{
@@ -228,6 +229,50 @@ section .title::after{
 .about .about-content .right a:hover{
     color: rgb(53, 207, 238);
     background: none;
+}
+
+.project {
+    color:#fff;
+    background: #111;
+}
+.project .title::before{
+    background: #fff;
+}
+.project .title::after{
+    background: #111;
+    content: "what i am working on";
+}
+.project .project-content .card{
+    width: calc(45% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+.project .project-content .card:hover{
+    background: rgb(53, 207, 238);
+}
+.project .project-content .card .box{
+    transition: all 0.3s ease;
+}
+.project .project-content .card:hover .box{
+    transform: scale(1.05);
+}
+.project .project-content .card i{
+    font-size: 50px;
+    color: rgb(53, 207, 238);
+    transition: color 0.3s ease;
+}
+.project .project-content .card:hover i{
+    color: #fff;
+}
+.project .project-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
 }
 
 .certifications {

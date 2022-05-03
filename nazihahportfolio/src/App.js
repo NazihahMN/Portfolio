@@ -4,6 +4,8 @@ import DigitalThinkingInnovation from './pic/DigitalThinkingInnovation.png';
 import MicrosoftCertifiedAzureDataFundamentals from './pic/MicrosoftCertifiedAzureDataFundamentals.png';
 import LinkedIn from './pic/LinkedIn.png';
 import github from './pic/github.png';
+import zi_andawan from './pic/zi_andawan.jpeg';
+import zi_mydev from './pic/zi_mydev.PNG';
 
 
 function App() {
@@ -51,31 +53,26 @@ function App() {
         </div>
     </section>
 
-    <section className="certifications" id="certifications">
+    <section className="project" id="project">
         <div className="max-width">
             <h2 className="title">My Project</h2>
-            <div className="cert-content">
+            <div className="project-content">
             <div className="box">
             </div>
             <div className="card">
                 <div className="box">
-                <a href ="" target="blank"><img src= "" width="200" height="200" alt=""/></a>
-                    <div className="text">Project 1</div>
-                    <p>On-going</p>
+                <img src= {zi_andawan} width="400" height="200" alt=""/>
+                    <div className="text">Andawan App</div>
+                    <p>(Completed)</p>
+                    <p>Node/Express, ReactJS, Cloudinary, MySQL</p>
                 </div>
             </div>
             <div className="card">
                 <div className="box">
-                <a href ="" target="blank"><img src= "" width="200" height="200" alt=""/></a>
-                    <div className="text">Project 2</div>
-                    <p>On-going</p>
-                </div>
-            </div>
-            <div className="card">
-                <div className="box">
-                <a href ="" target="blank"><img src= "" width="200" height="180" alt=""/></a>
-                    <div className="text">Project 3</div>
-                    <p>On-going</p>
+                <img src= {zi_mydev} width="400" height="200" alt=""/>
+                    <div className="text">MyDev App</div>
+                    <p>(On-going)</p>
+                    <p>Node/Express, ReactJS, MySQL</p>
                 </div>
             </div>
             </div>
