@@ -233,7 +233,7 @@ section .title::after{
 
 .project {
     color:#fff;
-    background: #111;
+    background: rgb(17, 1, 50);
 }
 .project .title::before{
     background: #fff;

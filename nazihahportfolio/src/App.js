@@ -47,7 +47,7 @@ function App() {
                 </div>
                 <div className="column right">
                     <p>insert text here</p>
-                    <a href="https://drive.google.com/file/d/12YTiempeUFdJ17i40kQNvLOWClLbdS8Y/view?usp=sharing">Download Resume</a>
+                    <a href="https://drive.google.com/file/d/1zuGXvUPB7NriWz4lto78pKSa2IGwWV4E/view?usp=sharing">Download Resume</a>
                 </div>
             </div>
         </div>
