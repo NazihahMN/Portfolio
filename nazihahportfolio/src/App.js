@@ -6,6 +6,7 @@ import LinkedIn from './pic/LinkedIn.png';
 import github from './pic/github.png';
 import zi_andawan from './pic/zi_andawan.jpeg';
 import zi_mydev from './pic/zi_mydev.PNG';
+import ziprofile from './pic/ziprofile.png';
 
 
 function App() {
@@ -43,7 +44,7 @@ function App() {
             <h2 className="title">About Me</h2>
             <div className="about-content">
                 <div className="column left">
-                    <img src=""alt=""/>
+                    <img src={ziprofile} alt=""/>
                 </div>
                 <div className="column right">
                     <p>insert text here</p>
