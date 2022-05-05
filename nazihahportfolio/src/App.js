@@ -43,11 +43,12 @@ function App() {
         <div className="max-width">
             <h2 className="title">About Me</h2>
             <div className="about-content">
-                <div className="column left">
+                <div className="column-left">
                     <img src={ziprofile} alt=""/>
                 </div>
                 <div className="column right">
-                    <p>insert text here</p>
+                <div className="text">Web Developer | Data Associate</div>
+                    <p>A process-oriented Business Administration (Marketing) graduate with knowledge in web development and data management.</p>
                     <a href="https://drive.google.com/file/d/1zuGXvUPB7NriWz4lto78pKSa2IGwWV4E/view?usp=sharing">Download Resume</a>
                 </div>
             </div>
