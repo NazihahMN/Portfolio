@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 .column-left img {
@@ -67,6 +68,7 @@ section .title::after{
 
 .navbar{
     position: fixed;
+    background: rgba(44, 3, 157, 0.692);
     width: 100%;
     z-index: 999;
     padding: 30px 0;
@@ -75,25 +77,15 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: rgb(53, 207, 238);;
+    background: rgb(53, 207, 238);
 }
+
 .navbar .max-width{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.navbar .logo a{
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
-}
-.navbar .logo a span{
-    color: rgb(53, 207, 238);;
-    transition: all 0.3s ease;
-}
-.navbar.sticky .logo a span{
-    color: #fff;
-}
+
 .navbar .menu li{
     list-style: none;
     display: inline-block;
@@ -106,9 +98,11 @@ section .title::after{
     margin-left: 25px;
     transition: color 0.3s ease;
 }
+
 .navbar .menu li a:hover{
-    color: rgb(233, 215, 255);;
+    color: rgb(157, 77, 255);
 }
+
 .navbar.sticky .menu li a:hover{
     color: #fff;
 }

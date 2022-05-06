@@ -7,6 +7,7 @@ import github from './pic/github.png';
 import zi_andawan from './pic/zi_andawan.jpeg';
 import zi_mydev from './pic/zi_mydev.PNG';
 import ziprofile from './pic/ziprofile.png';
+import moon from './pic/moon.jpg';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
                 <li><a href="#certifications" className="menu-btn">Certifications</a></li>
                 <li><a href="#contact" className="menu-btn">Contact</a></li>
             </ul>
+            {/* <img src={moon} width="50" id="mode"/> */}
         </div>
     </nav>
 
