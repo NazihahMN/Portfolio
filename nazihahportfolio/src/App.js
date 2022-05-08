@@ -49,7 +49,7 @@ function App() {
                     <img src={ziprofile} alt=""/>
                 </div>
                 <div className="column right">
-                <div className="text">Web Developer | Data Associate</div>
+                <div className="text"> Aspiring Web Developer | Data Associate</div>
                     <p>A process-oriented Business Administration (Marketing) graduate with knowledge in web development and data management.</p>
                     <a href="https://drive.google.com/file/d/1zuGXvUPB7NriWz4lto78pKSa2IGwWV4E/view?usp=sharing">Download Resume</a>
                 </div>

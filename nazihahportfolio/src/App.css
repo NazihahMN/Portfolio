@@ -75,10 +75,38 @@ section .title::after{
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
-.navbar.sticky{
+
+.navbar ul{
+    list-style-type: none;
+    background: rgba(128, 128, 128, 0);
+    overflow: hidden;
+}
+
+.navbar ul li{
+    display: inline-block;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li a::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: rgb(157, 77, 255);
+    display: block;
+}
+
+.navbar ul li a:hover::after{
+    width: 100%;
+    transition: .5s;
+}
+/* .navbar.sticky{
     padding: 15px 0;
     background: rgb(157, 77, 255);
-}
+} */
 
 .navbar .max-width{
     display: flex;
