@@ -7,7 +7,6 @@ import github from './pic/github.png';
 import zi_andawan from './pic/zi_andawan.jpeg';
 import zi_mydev from './pic/zi_mydev.PNG';
 import ziprofile from './pic/ziprofile.png';
-import moon from './pic/moon.jpg';
 
 
 function App() {
@@ -27,7 +26,6 @@ function App() {
                 <li><a href="#certifications" className="menu-btn">Certifications</a></li>
                 <li><a href="#contact" className="menu-btn">Contact</a></li>
             </ul>
-            {/* <img src={moon} width="50" id="mode"/> */}
         </div>
     </nav>
 
@@ -88,9 +86,8 @@ function App() {
             <h2 className="title">My Skills</h2>
             <div className="skills-content">
                 <div className="column left">
-                    <div className="text">INTERNSHIP & PROJECT</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum delectus qui laudantium, voluptas non corporis, expedita quas enim architecto officiis sint reprehenderit eaque aliquid vel. Veritatis repellendus nam omnis! Qui?</p>
-                    <a href="#">Read more</a>
+                    <div className="text">PROJECT</div>
+                    <p>This section will be updated once the project is completed</p>
                 </div>
                 <div className="column right">
                     <div className="bars">
@@ -163,7 +160,7 @@ function App() {
             <div className="contact-content">
                 <div className="column left">
                     <div className="text">Get in Touch</div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
+                    <p>Good day! Thank you for visiting my profile. Feel free to reach me out via LinkedIn or simply drop your message here! I will get back to you sooner :)</p>
                     <div className="icon">
                         <div className="row">
                             <i className="fas fa-envelope"></i>
@@ -206,7 +203,7 @@ function App() {
     </section>
 
     <footer>
-        <span><a href="https://github.com/NazihahMN">Nazihah Nazri</a> | <span class="far fa-copyright"></span> All Rights Reserved. Privacy Policy</span>
+        <span><a href="https://github.com/NazihahMN">Nazihah Nazri</a> | <span class="far fa-copyright"></span>Portfolio website</span>
     </footer>
 
     </div>
