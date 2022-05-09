@@ -71,7 +71,7 @@ section .title::after{
     background: rgba(44, 3, 157, 0.692);
     width: 100%;
     z-index: 999;
-    padding: 30px 0;
+    padding: 25px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
@@ -103,10 +103,6 @@ section .title::after{
     width: 100%;
     transition: .5s;
 }
-/* .navbar.sticky{
-    padding: 15px 0;
-    background: rgb(157, 77, 255);
-} */
 
 .navbar .max-width{
     display: flex;
@@ -159,6 +155,7 @@ section .title::after{
 .home .max-width .row{
   margin-right: 0;
 }
+
 .home .home-content .text-1{
     font-size: 27px;
 }
@@ -167,43 +164,11 @@ section .title::after{
     font-weight: 600;
     margin-left: -3px;
 }
-.home .home-content .text-3{
-    font-size: 40px;
-    margin: 5px 0;
-}
-.home .home-content .text-3 span{
-    color: rgb(53, 207, 238);
-    font-weight: 500;
-}
-.home .home-content a{
-    display: inline-block;
-    background: rgb(53, 207, 238);
-    color: #fff;
-    font-size: 25px;
-    padding: 12px 36px;
-    margin-top: 20px;
-    font-weight: 400;
-    border-radius: 6px;
-    border: 2px solid rgb(53, 207, 238);
-    transition: all 0.3s ease;
-}
-.home .home-content a:hover{
-    color: rgb(53, 207, 238);
-    background: none;
-}
 
 .about .title::after{
     content: "who i am";
 }
-.about .about-content .left{
-    width: 45%;
-}
-.about .about-content .left img{
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
-    border-radius: 6px;
-}
+
 .about .about-content .right{
     width: 55%;
 }
@@ -212,9 +177,7 @@ section .title::after{
     font-weight: 600;
     margin-bottom: 10px;
 }
-.about .about-content .right .text span{
-    color: rgb(53, 207, 238);
-}
+
 .about .about-content .right p{
     text-align: justify;
 }
@@ -239,13 +202,12 @@ section .title::after{
     color:#fff;
     background: rgb(17, 1, 50);
 }
-.project .title::before{
-    background: #fff;
-}
+
 .project .title::after{
-    background: #111;
     content: "what i am working on";
+    background: #111;
 }
+
 .project .project-content .card{
     width: calc(45% - 20px);
     background: #222;
@@ -254,8 +216,8 @@ section .title::after{
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
-
 }
+
 .project .project-content .card:hover{
     background: rgb(157, 77, 255);
 }
@@ -265,14 +227,7 @@ section .title::after{
 .project .project-content .card:hover .box{
     transform: scale(1.05);
 }
-.project .project-content .card i{
-    font-size: 50px;
-    color: rgb(157, 77, 255);
-    transition: color 0.3s ease;
-}
-.project .project-content .card:hover i{
-    color: #fff;
-}
+
 .project .project-content .card .text{
     font-size: 25px;
     font-weight: 500;
@@ -393,7 +348,8 @@ section .title::after{
 }
 
 #icon {
-    margin: 3px;
+    margin: 6px;
+    padding: 4px;
 }
 
 .contact .title::after{
@@ -410,27 +366,7 @@ section .title::after{
 .contact .contact-content .left p{
     text-align: justify;
 }
-/* .contact .contact-content .left .icons{
-    margin: 10px 0;
-} */
-.contact .contact-content .row{
-    display: flex;
-    height: 65px;
-    align-items: center;
-}
-.contact .contact-content .row .info{
-    margin-left: 30px;
-}
-.contact .contact-content .row i{
-    font-size: 25px;
-    color: rgb(157, 77, 255);
-}
-.contact .contact-content .info .head{
-    font-weight: 500;
-}
-.contact .contact-content .info .sub-title{
-    color: #333;
-}
+
 .contact .right form .fields{
     display: flex;
 }
@@ -497,13 +433,6 @@ footer{
     color: #fff;
     text-align: center;
 }
-footer span a{
-    color: rgb(157, 77, 255);
-    text-decoration: none;
-}
-footer span a:hover{
-    text-decoration: underline;
-}
 
 
 /* responsive media query start */
@@ -552,13 +481,7 @@ footer span a:hover{
     .home .home-content .text-2{
         font-size: 70px;
     }
-    .home .home-content .text-3{
-        font-size: 35px;
-    }
-    .home .home-content a{
-        font-size: 23px;
-        padding: 10px 30px;
-    }
+    
     .max-width{
         max-width: 930px;
     }
@@ -591,9 +514,6 @@ footer span a:hover{
     .home .home-content .text-2{
         font-size: 60px;
     }
-    .home .home-content .text-3{
-        font-size: 32px;
-    }
     .home .home-content a{
         font-size: 20px;
     }
@@ -623,12 +543,5 @@ footer span a:hover{
     .right form .error-box{
        width: 150px;
     }
-    .scroll-up-btn{
-        right: 15px;
-        bottom: 15px;
-        height: 38px;
-        width: 35px;
-        font-size: 23px;
-        line-height: 38px;
-    }
+   
 }

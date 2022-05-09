@@ -12,18 +12,15 @@ import ziprofile from './pic/ziprofile.png';
 function App() {
   return (
     <div className="App">
-      <div className="scroll-up-btn">
-        <i className="fas fa-angle-up"></i>
-    </div>
     <nav className="navbar">
         <div className="max-width">
             <div className="logo"></div>
             <ul className="menu">
                 <li><a href="#home" className="menu-btn">Home</a></li>
                 <li><a href="#about" className="menu-btn">About</a></li>
-                <li><a href="#project" className="menu-btn">Project</a></li>
-                <li><a href="#skills" className="menu-btn">Skills</a></li>
                 <li><a href="#certifications" className="menu-btn">Certifications</a></li>
+                <li><a href="#skills" className="menu-btn">Skills</a></li>
+                <li><a href="#project" className="menu-btn">Project</a></li>
                 <li><a href="#contact" className="menu-btn">Contact</a></li>
             </ul>
         </div>
@@ -48,33 +45,38 @@ function App() {
                 </div>
                 <div className="column right">
                 <div className="text"> Aspiring Web Developer | Data Associate</div>
-                    <p>A process-oriented Business Administration (Marketing) graduate with knowledge in web development and data management.</p>
+                    <p>A process-oriented Business Administration (Marketing) graduate with knowledge in web development and data management</p>
                     <a href="https://drive.google.com/file/d/1zuGXvUPB7NriWz4lto78pKSa2IGwWV4E/view?usp=sharing">Download Resume</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section className="project" id="project">
+    <section className="certifications" id="certifications">
         <div className="max-width">
-            <h2 className="title">My Project</h2>
-            <div className="project-content">
+            <h2 className="title">Certifications & Badges</h2>
+            <div className="cert-content">
             <div className="box">
             </div>
             <div className="card">
                 <div className="box">
-                <img src= {zi_andawan} width="400" height="200" alt=""/>
-                    <div className="text">Andawan App</div>
-                    <p>(Completed)</p>
-                    <p>Node/Express, ReactJS, Cloudinary, MySQL</p>
+                <a href ="https://www.credly.com/badges/b1b9413f-df54-4152-99a7-eaee3c9da53c" target="blank"><img src={CertifiedDataAssociate} width="200" height="200" alt=""/></a>
+                    <div className="text">CDA</div>
+                    <p>Data Concepts | Organizational Data</p>
                 </div>
             </div>
             <div className="card">
                 <div className="box">
-                <img src= {zi_mydev} width="400" height="200" alt=""/>
-                    <div className="text">MyDev App</div>
-                    <p>(On-going)</p>
-                    <p>Node/Express, ReactJS, MySQL</p>
+                <a href ="https://www.credly.com/badges/88e8411c-278d-4ea2-8f35-f158e4c1dac1" target="blank"><img src={DigitalThinkingInnovation} width="200" height="200" alt=""/></a>
+                    <div className="text">DTI</div>
+                    <p>Design Thinking | Digital Innovation</p>
+                </div>
+            </div>
+            <div className="card">
+                <div className="box">
+                <a href ="https://www.credly.com/badges/21cf4a58-10d3-4775-8d32-732be016e103" target="blank"><img src={MicrosoftCertifiedAzureDataFundamentals} width="190" height="150" alt=""/></a>
+                    <div className="text">DP-900</div>
+                    <p>Core Data Concepts | Relational Data | Non-Relational Data | Data Workloads</p>
                 </div>
             </div>
             </div>
@@ -123,31 +125,26 @@ function App() {
         </div>
     </section>
 
-    <section className="certifications" id="certifications">
+    <section className="project" id="project">
         <div className="max-width">
-            <h2 className="title">Certifications & Badges</h2>
-            <div className="cert-content">
+            <h2 className="title">My Project</h2>
+            <div className="project-content">
             <div className="box">
             </div>
             <div className="card">
                 <div className="box">
-                <a href ="https://www.credly.com/badges/b1b9413f-df54-4152-99a7-eaee3c9da53c" target="blank"><img src={CertifiedDataAssociate} width="200" height="200" alt=""/></a>
-                    <div className="text">CDA</div>
-                    <p>Data Concepts | Organizational Data</p>
+                <img src= {zi_andawan} width="400" height="200" alt=""/>
+                    <div className="text">Andawan App</div>
+                    <p>(Completed)</p>
+                    <p>Node/Express, ReactJS, Cloudinary, MySQL</p>
                 </div>
             </div>
             <div className="card">
                 <div className="box">
-                <a href ="https://www.credly.com/badges/88e8411c-278d-4ea2-8f35-f158e4c1dac1" target="blank"><img src={DigitalThinkingInnovation} width="200" height="200" alt=""/></a>
-                    <div className="text">DTI</div>
-                    <p>Design Thinking | Digital Innovation</p>
-                </div>
-            </div>
-            <div className="card">
-                <div className="box">
-                <a href ="https://www.credly.com/badges/21cf4a58-10d3-4775-8d32-732be016e103" target="blank"><img src={MicrosoftCertifiedAzureDataFundamentals} width="200" height="180" alt=""/></a>
-                    <div className="text">DP-900</div>
-                    <p>Core Data Concepts | Relational Data | Non-Relational Data | Data Workloads</p>
+                <img src= {zi_mydev} width="400" height="200" alt=""/>
+                    <div className="text">MyDev App</div>
+                    <p>(On-going)</p>
+                    <p>Node/Express, ReactJS, MySQL</p>
                 </div>
             </div>
             </div>
@@ -162,18 +159,9 @@ function App() {
                     <div className="text">Get in Touch</div>
                     <p>Good day! Thank you for visiting my profile. Feel free to reach me out via LinkedIn or simply drop your message here! I will get back to you sooner :)</p>
                     <div className="icon">
-                        <div className="row">
-                            <i className="fas fa-envelope"></i>
-                            <div className="icon">
                                 <a href ="https://github.com/NazihahMN" target="blank"><img id="icon" src={github} width="55" height="55" alt=""/></a>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <i className="fas fa-envelope"></i>
-                            <div className="icon">
+                            
                                 <a href ="https://www.linkedin.com/in/nazihah-nazri-747877zee/" target="blank"><img id="icon" src={LinkedIn} width="50" height="50" alt=""/></a>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div className="column right">
@@ -203,7 +191,7 @@ function App() {
     </section>
 
     <footer>
-        <span><a href="https://github.com/NazihahMN">Nazihah Nazri</a> | <span class="far fa-copyright"></span>Portfolio website</span>
+        <span><a href="https://github.com/NazihahMN">Nazihah Nazri</a></span><span> | Portfolio website</span>
     </footer>
 
     </div>
