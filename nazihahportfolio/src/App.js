@@ -7,6 +7,7 @@ import github from './pic/github.png';
 import zi_andawan from './pic/zi_andawan.jpeg';
 import zi_mydev from './pic/zi_mydev.PNG';
 import ziprofile from './pic/ziprofile.png';
+import $ from 'jquery';
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
     <div className="App">
     <nav className="navbar">
         <div className="max-width">
-            <div className="logo"></div>
+            <div className="logo"><a href="#">My<span>Portfolio</span></a></div>
             <ul className="menu">
                 <li><a href="#home" className="menu-btn">Home</a></li>
                 <li><a href="#about" className="menu-btn">About</a></li>
@@ -23,6 +24,9 @@ function App() {
                 <li><a href="#project" className="menu-btn">Project</a></li>
                 <li><a href="#contact" className="menu-btn">Contact</a></li>
             </ul>
+            <div className="menu-btn">
+                <i className="fas fa-bars"></i>
+            </div>
         </div>
     </nav>
 
@@ -36,15 +40,17 @@ function App() {
         </div>
     </section>
 
+    {/* about */}
+
     <section className="about" id="about">
         <div className="max-width">
             <h2 className="title">About Me</h2>
             <div className="about-content">
-                <div className="column-left">
+                <div className="columnleft">
                     <img src={ziprofile} alt=""/>
                 </div>
                 <div className="column right">
-                <div className="text"> Aspiring Web Developer | Data Associate</div>
+                    <div className="text"> Aspiring Web Developer | Data Associate</div>
                     <p>A process-oriented Business Administration (Marketing) graduate with knowledge in web development and data management</p>
                     <a href="https://drive.google.com/file/d/1zuGXvUPB7NriWz4lto78pKSa2IGwWV4E/view?usp=sharing">Download Resume</a>
                 </div>
@@ -52,29 +58,29 @@ function App() {
         </div>
     </section>
 
+    {/* certifications */}
+
     <section className="certifications" id="certifications">
         <div className="max-width">
             <h2 className="title">Certifications & Badges</h2>
             <div className="cert-content">
-            <div className="box">
-            </div>
-            <div className="card">
+                <div className="card">
                 <div className="box">
-                <a href ="https://www.credly.com/badges/b1b9413f-df54-4152-99a7-eaee3c9da53c" target="blank"><img src={CertifiedDataAssociate} width="200" height="200" alt=""/></a>
+                <a href ="https://www.credly.com/badges/b1b9413f-df54-4152-99a7-eaee3c9da53c" target="blank"><img src={CertifiedDataAssociate} width="150" height="200" alt=""/></a>
                     <div className="text">CDA</div>
                     <p>Data Concepts | Organizational Data</p>
                 </div>
             </div>
             <div className="card">
                 <div className="box">
-                <a href ="https://www.credly.com/badges/88e8411c-278d-4ea2-8f35-f158e4c1dac1" target="blank"><img src={DigitalThinkingInnovation} width="200" height="200" alt=""/></a>
+                <a href ="https://www.credly.com/badges/88e8411c-278d-4ea2-8f35-f158e4c1dac1" target="blank"><img src={DigitalThinkingInnovation} width="150" height="200" alt=""/></a>
                     <div className="text">DTI</div>
                     <p>Design Thinking | Digital Innovation</p>
                 </div>
             </div>
             <div className="card">
                 <div className="box">
-                <a href ="https://www.credly.com/badges/21cf4a58-10d3-4775-8d32-732be016e103" target="blank"><img src={MicrosoftCertifiedAzureDataFundamentals} width="190" height="150" alt=""/></a>
+                <a href ="https://www.credly.com/badges/21cf4a58-10d3-4775-8d32-732be016e103" target="blank"><img src={MicrosoftCertifiedAzureDataFundamentals} width="100" height="150" alt=""/></a>
                     <div className="text">DP-900</div>
                     <p>Core Data Concepts | Relational Data | Non-Relational Data | Data Workloads</p>
                 </div>
@@ -82,12 +88,14 @@ function App() {
             </div>
         </div>
     </section>
+
+    {/* skills */}
     
     <section className="skills" id="skills">
         <div className="max-width">
             <h2 className="title">My Skills</h2>
             <div className="skills-content">
-                <div className="column left">
+                <div className="columnleft">
                     <div className="text">PROJECT</div>
                     <p>This section will be updated once the project is completed</p>
                 </div>
@@ -125,6 +133,8 @@ function App() {
         </div>
     </section>
 
+    {/* project */}
+
     <section className="project" id="project">
         <div className="max-width">
             <h2 className="title">My Project</h2>
@@ -133,8 +143,8 @@ function App() {
             </div>
             <div className="card">
                 <div className="box">
-                <img src= {zi_andawan} width="400" height="200" alt=""/>
-                    <div className="text">Andawan App</div>
+                <img src= {zi_andawan} alt=""/>
+                    <div className="text">Andawan</div>
                     <p>(Completed)</p>
                     <p>Node/Express, ReactJS, Cloudinary, MySQL</p>
                 </div>
@@ -142,14 +152,16 @@ function App() {
             <div className="card">
                 <div className="box">
                 <img src= {zi_mydev} width="400" height="200" alt=""/>
-                    <div className="text">MyDev App</div>
+                    <div className="text">MyDev</div>
                     <p>(On-going)</p>
-                    <p>Node/Express, ReactJS, MySQL</p>
+                    <p>Node/Express, ReactJS, MySQL, Google Map</p>
                 </div>
             </div>
             </div>
         </div>
     </section>
+
+    {/* contact */}
 
     <section className="contact" id="contact">
         <div className="max-width">
@@ -157,11 +169,11 @@ function App() {
             <div className="contact-content">
                 <div className="column left">
                     <div className="text">Get in Touch</div>
-                    <p>Good day! Thank you for visiting my profile. Feel free to reach me out via LinkedIn or simply drop your message here! I will get back to you sooner :)</p>
+                    <p>Good day! Thank you for visiting my profile. Feel free to reach me out via LinkedIn or simply drop your message here, I will get back to you sooner!</p>
                     <div className="icon">
-                                <a href ="https://github.com/NazihahMN" target="blank"><img id="icon" src={github} width="55" height="55" alt=""/></a>
+                                <a href ="https://github.com/NazihahMN" target="blank"><img id="icon" src={github} alt=""/></a>
                             
-                                <a href ="https://www.linkedin.com/in/nazihah-nazri-747877zee/" target="blank"><img id="icon" src={LinkedIn} width="50" height="50" alt=""/></a>
+                                <a href ="https://www.linkedin.com/in/nazihah-nazri-747877zee/" target="blank"><img id="icon" src={LinkedIn} alt=""/></a>
                     </div>
                 </div>
                 <div className="column right">
@@ -197,5 +209,21 @@ function App() {
     </div>
   );
 }
+
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if(this.scrollY > 20){
+            $('.navbar').addClass("sticky");
+        }else{
+            $('.navbar').removeClass("sticky");
+        }
+    });
+    
+    $('.menu-btn').click(function(){
+         $('.navbar .menu').toggleClass("active");
+         $('.menu-btn i').toggleClass("active");
+    });
+});
+
 
 export default App;
