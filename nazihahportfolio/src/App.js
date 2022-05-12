@@ -50,7 +50,7 @@ function App() {
                 <div className="column right">
                     <div className="text"> Aspiring Web Developer | Data Associate</div>
                     <p>A process-oriented Business Administration (Marketing) graduate with knowledge in web development and data management</p>
-                    <a href="https://drive.google.com/file/d/1zuGXvUPB7NriWz4lto78pKSa2IGwWV4E/view?usp=sharing">Download Resume</a>
+                    <a href="">Download Resume</a>
                 </div>
             </div>
         </div>
