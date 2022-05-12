@@ -1,9 +1,9 @@
-/*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
     box-sizing: border-box;
     text-decoration: none;
 }
@@ -18,14 +18,17 @@
 section{
     padding: 100px 0;
 }
+
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
 }
-.about, .project, .skills, .certifications, .contact, footer{
+
+.about, .certifications, .skills, .project, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
+
 .about .about-content,
 .project .project-content,
 .skills .skills-content,
@@ -36,6 +39,7 @@ section{
     align-items: center;
     justify-content: space-between;
 }
+
 section .title{
     position: relative;
     text-align: center;
@@ -45,6 +49,7 @@ section .title{
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
+
 section .title::before{
     content: "";
     position: absolute;
@@ -55,6 +60,7 @@ section .title::before{
     background: #111;
     transform: translateX(-50%);
 }
+
 section .title::after{
     position: absolute;
     bottom: -8px;
@@ -66,123 +72,168 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-.navbar{
+nav{
+    background: rgba(44, 3, 157, 0.477);
+    height: 80px;
+    width: 100%;
     position: fixed;
-    width: 100%;
-    z-index: 999;
-    padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
-    transition: all 0.3s ease; 
 }
 
-.navbar.sticky{
-    padding: 15px 0;
-    background: rgba(44, 3, 157, 0.692);
+nav .logo span{
+    color: rgb(197, 44, 252);
 }
 
-.navbar .max-width{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar .logo a{
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
-}
-
-.navbar .logo a span{
-    color:rgb(157, 77, 255);
-    transition: all 0.3s ease;
-}
-
-.navbar.sticky .logo a span{
-    color: #fff;
-}
-
-.navbar ul{
-    list-style-type: none;
-    background: rgba(128, 128, 128, 0);
-    overflow: hidden;
-}
-
-.navbar ul li{
-    display: inline-block;
-}
-
-.navbar ul li a{
-    text-decoration: none;
+label.logo{
     color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
 }
 
-.navbar ul li a::after{
-    content:'';
-    width: 0%;
-    height: 2px;
-    background: rgb(157, 77, 255);
-    display: block;
+nav ul{
+    float: right;
+    margin-right: 40px;
 }
 
-.navbar ul li a:hover::after{
-    width: 100%;
-    transition: .5s;
-} */
-
-.navbar .menu li{
-    list-style: none;
+nav li{
     display: inline-block;
+    line-height: 80px;
+    margin: 0 8px;
 }
-.navbar .menu li a{
-    display: block; 
-    color: #fff;
+
+nav a{
+    color: white;
     font-size: 18px;
-    font-weight: 500;
-    margin-left: 25px;
-    transition: color 0.3s ease; 
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
 }
 
-.navbar .menu li a:hover{
-    color: rgb(157, 77, 255);
+a.active,a:hover{
+    border: 1px solid white;
+    transition: .5s;
 }
 
-.navbar.sticky .menu li a:hover{
-    color: #fff;
-}
-
-.menu-btn{
-    color: #fff;
-    font-size: 23px;
+nav #iconz{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
     cursor: pointer;
     display: none;
 }
- 
+
+@media (max-width: 1048px) {
+    label.logo{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+
+    nav ul {
+        margin-right: 20px;
+    }
+
+    nav a{
+        font-size: 17px;
+    }
+}
+
+
+@media (max-width: 909px){
+    nav #iconz{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2F3640;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a{
+        font-size:20px;
+    }
+    a.active,a:hover{
+        border: none;
+        color: #3498DB;
+    }
+    nav ul.show{
+        left: 0;
+    }
+}
+
+@media (max-width: 909px){
+    nav #iconz{
+        display: block;
+    }
+
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2F3640;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav a{
+        font-size: 20px;
+    }
+
+    a.active,a:hover{
+        border: none;
+        color: rgb(157, 77, 255);
+    }
+    nav ul.show{
+        left: 0;
+    }
+}
+
 .home{
-    display: flex;
     background: url("https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80") no-repeat center;
     height: 100vh;
     color: #fff;
-    min-height: 500px;
     background-size: cover;
-    background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
-}
-.home .max-width{
-  width: 100%;
-  display: flex;
-  /* margin: auto 0 auto 40px; */
-}
-.home .max-width .row{
-  margin-right: 0;
 }
 
 .home .home-content .text-1{
     font-size: 27px;
+    text-align: center;
+    padding: 70px;
+    line-height: 150px;
 }
+
 .home .home-content .text-2{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
+    text-align: center;
+}
+
+.home .home-content .text-2 span{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
 }
 
 .about .title::after{
@@ -192,6 +243,7 @@ section .title::after{
 .about .about-content .left{
     width: 45%;
 }
+
 .about .about-content .left .img{
     height: 400px;
     width: 400px;
@@ -215,6 +267,7 @@ section .title::after{
 .about .about-content .right p{
     text-align: justify;
 }
+
 .about .about-content .right a{
     display: inline-block;
     background: rgb(157, 77, 255);
@@ -227,24 +280,89 @@ section .title::after{
     border: 2px solid rgb(157, 77, 255);
     transition: all 0.3s ease;
 }
+
 .about .about-content .right a:hover{
     color: rgb(157, 77, 255);
     background: none;
 }
 
-.certifications, .project {
-    color:#fff;
-    background: rgb(17, 1, 50);
+.certifications{
+    color: #fff;
+    background: #111;
 }
+
+.certifications .title::before{
+    background: #fff;
+}
+
+.certifications .title::after{
+    background: #111;
+    content: "accomplishment";
+}
+
+.certifications .cert-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.certifications .cert-content .card:hover{
+    background: rgb(157, 77, 255);
+}
+
+.certifications .cert-content .card .box{
+    transition: all 0.3s ease;
+}
+
+.certifications .cert-content .card:hover .box{
+    transform: scale(1.05);
+}
+
+.certifications .cert-content .card .detail{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color: rgb(78, 0, 173);
+    font-family: 'Ubuntu';
+}
+
+.certifications, .project{
+    color:#fff;
+    background: #111;
+}
+
 .certifications .title::before,
 .project .title::before{
     background: #fff;
 }
+
 .certifications .title::after,
 .project .title::after{
     background: #111;
-    content: "what i accomplished";
+    content: "accomplishment";
 }
+
+
+/* .certifications, .project{
+    color:#fff;
+    background: #111;
+}
+
+.certifications .title::before,
+.project .title::before{
+    background: #fff;
+}
+
+.certifications .title::after,
+.project .title::after{
+    background: #111;
+    content: "accomplishment";
+}
+
 .certifications .cert-content .card{
     width: calc(33% - 20px);
     background: #222;
@@ -254,28 +372,34 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 .certifications .cert-content .card:hover{
     background: rgb(157, 77, 255);
 }
+
 .certifications .cert-content .card .box{
     transition: all 0.3s ease;
 }
+
 .certifications .cert-content .card:hover .box{
     transform: scale(1.05);
 }
+
 .certifications .cert-content .card i{
     font-size: 50px;
     color: rgb(157, 77, 255);
     transition: color 0.3s ease;
 }
+
 .certifications .cert-content .card:hover i{
     color: #fff;
 }
+
 .certifications .cert-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
-}
+} */
 
 .skills .title::after{
     content: "what i know";
@@ -347,11 +471,99 @@ section .title::after{
     width: 40%;
 }
 
+.texts{
+    font-family: 'Ubuntu'
+}
 .project .title::after{
-    content: "what i am working on";
+    content: "building";
 }
 
-.project .project-content .card{
+.container{
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards{
+    height: 290px;
+    max-width: 350px;
+    margin: 0 20px;
+    background: whitesmoke;
+    transition: 0.4s;
+    box-shadow: 2px 2px 5px rgba(0,0,0, 0.2);
+}
+
+.cards:hover{
+    height: 470px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+
+.cards .img{
+    height: 200px;
+    width: 100%;
+}
+
+.cards .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cards .top-text{
+    padding: 10px;
+    background: rgba(157, 77, 255, 0.189);
+}
+
+.cards .top-text .names{
+    font-size: 25px;
+    font-weight: 600;
+    color: #202020;
+    text-align: center;
+}
+
+.cards .top-text p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #36006f;
+    line-height: 20px;
+    text-align: center;
+}
+
+.cards .bottom-text{
+    padding: 0 20px 174px 20px;
+    margin-top: 5px;
+    background: rgb(157, 77, 255);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.1s;
+}
+
+.cards:hover .bottom-text{
+    opacity: 1;
+    visibility: visible;
+}
+
+.cards .bottom-text .texts{
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    height: 5em;
+    align-items: center;
+    display: flex;
+}
+
+@media screen and (max-width: 978px) {
+    .container{
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .cards{
+      max-width: 700px;
+      margin: 20px 0;
+    }
+}
+/* .project .project-content .card{
     width: calc(45% - 20px);
     background: #222;
     text-align: center;
@@ -360,7 +572,6 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-
 .project .project-content .card:hover{
     background: rgb(157, 77, 255);
 }
@@ -370,18 +581,16 @@ section .title::after{
 .project .project-content .card:hover .box{
     transform: scale(1.05);
 }
-
 .project .project-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
-}
+} */
 
 #icon {
     margin: 6px;
     padding: 4px;
 }
-
 .contact .title::after{
     content: "get in touch";
 }
@@ -396,7 +605,6 @@ section .title::after{
 .contact .contact-content .left p{
     text-align: justify;
 }
-
 .contact .right form .fields{
     display: flex;
 }
@@ -427,7 +635,7 @@ section .title::after{
 }
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus{
-    border-color: #b3b3b3;
+    border-color: #B3B3B3;
 }
 .contact .right form .textarea textarea{
   padding-top: 10px;
@@ -456,19 +664,16 @@ section .title::after{
   color: rgb(157, 77, 255);
   background: none;
 }
-
 footer{
     background: rgb(17, 1, 50);
     padding: 15px 23px;
     color: #fff;
     text-align: center;
 }
-
 img{
     max-width: 100%;
     height: 100px;
 }
-
 /* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{
@@ -476,7 +681,6 @@ img{
         width: 350px;
     }
 }
-
 @media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
@@ -515,7 +719,6 @@ img{
     .home .home-content .text-2{
         font-size: 70px;
     }
-    
     .max-width{
         max-width: 930px;
     }
@@ -540,7 +743,6 @@ img{
         margin-bottom: 35px;
     }
 }
-
 @media (max-width: 690px) {
     .max-width{
         padding: 0 23px;
@@ -555,12 +757,10 @@ img{
         width: 100%;
     }
 }
-
 @media (max-width: 500px) {
     .home .home-content .text-2{
         font-size: 50px;
     }
-    
     .about .about-content .right .text,
     .skills .skills-content .left .text{
         font-size: 19px;
@@ -575,5 +775,4 @@ img{
     .right form .error-box{
        width: 150px;
     }
-   
 }
